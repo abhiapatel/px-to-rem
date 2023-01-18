@@ -1,0 +1,14 @@
+.details{
+  min-height: 100vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 40rem;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .details {
+    padding: 1.563rem;
+  }
+}

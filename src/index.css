@@ -1,13 +1,105 @@
+@import "./tailwind.css";
+
+@font-face {
+  font-family: "SF-Pro-Text-Medium";
+  src: local("SF-Pro-Text-Medium"),
+    url("../assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Pro-Text-Regular";
+  src: local("SF-Pro-Text-Regular"),
+    url("../assets/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Medium";
+  src: local("SF-Pro-Display-Medium"),
+    url("../assets/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: local("SF-Pro-Display-Regular"),
+    url("../assets/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SFMono-Regular";
+  src: local("SFMono-Regular"),
+    url("../assets/fonts/SFMono-Regular.otf") format("opentype");
+}
+
 body {
+  font-family: SF-Pro-Text-Regular;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #112240;
+  color: #8892b0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8892b0 #0a192f;
+}
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8892b0;
+  border: 0.1875rem solid #0a192f;
+  border-radius: 0.625rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: SFMono-Regular;
+  color: #64ffda;
+}
+
+.sf-regular {
+  font-family: SF-Pro-Text-Regular;
+  font-size: 0.875rem;
+}
+.sf-medium {
+  font-family: SF-Pro-Text-Medium;
+}
+.sf-display-regular {
+  font-family: SF-Pro-Display-Regular;
+}
+.sf-display-medium {
+  font-family: SF-Pro-Display-Medium;
+  font-size: 1rem;
+  color: #ccd6f6;
+}
+.sf-mono {
+  font-family: SFMono-Regular;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  transition: all 150ms ease-in-out;
+  box-sizing: border-box;
+  padding: 0.25rem 1.25rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #233554;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 30px -15px #0a192f;
+}
+
+input:focus {
+  outline: 0;
+  /* color: #e6f1ff; */
+}
+
+.header {
+  font-size: 1.8rem;
+  color: #e6f1ff;
 }

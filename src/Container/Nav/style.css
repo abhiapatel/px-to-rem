@@ -1,0 +1,58 @@
+.navHeader {
+  position: fixed;
+  z-index: 11;
+  padding: 1.875rem;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(10, 25, 47, 0.85);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  backdrop-filter: blur(10px);
+}
+@media (max-width: 1080px) {
+  .navHeader {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navHeader {
+    padding: 0 1.5625rem;
+  }
+}
+
+.active {
+  color: white;
+}
+
+.styledNav {
+  position: relative;
+  width: 100%;
+  color: #ccd6f6;
+  z-index: 12;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.styledLink ol {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.styledLink ol li {
+  margin: 0 0.3125rem;
+  position: relative;
+}

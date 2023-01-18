@@ -1,0 +1,11 @@
+.seperator {
+  border-right: 1px solid;
+  display: inline-block;
+  margin: 0;
+  margin-right: 1.25rem;
+  padding: 0 1.438rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  vertical-align: top;
+  line-height: 3.063rem;
+}
