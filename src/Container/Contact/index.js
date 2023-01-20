@@ -13,7 +13,12 @@ export const Contact = () => {
         {Data.devs.map((dev, index) => (
           <div className="flex items-center" key={index}>
             <div className="contact-seperator flex flex-col justify-center items-center gap-4">
-              <a className="cursor-pointer" href={dev.github} target="_blank">
+              <a
+                className="cursor-pointer"
+                href={dev.github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Github />
               </a>
 
@@ -21,6 +26,7 @@ export const Contact = () => {
                 className="cursor-pointer"
                 href={`mailto:${dev.email}`}
                 target="_blank"
+                rel="noreferrer"
               >
                 <Mail />
               </a>
